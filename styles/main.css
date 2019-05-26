@@ -1,0 +1,415 @@
+/* color-primary: #212121 */
+/* color-light: #484848 */
+/* color-dark: #000000 */
+
+@import url('content-skeleton-loader.css');
+@import url('suggested-skeleton-loader.css');
+
+body {
+    margin: 0px;
+    font-family: 'Raleway';
+    background: #ecdddd;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    background:#212121;
+    position: fixed;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    z-index: 1000;
+}
+
+header nav .logo-container h1 {
+    color: #ffffff;
+    margin: 20px;
+}
+
+header nav .logo-container h1 span {
+    margin-left: 5px;
+    position: absolute;
+    margin-top: 7px;
+    letter-spacing: 2;
+}
+
+header nav .logo-container h1 i {
+    height: 40px;
+    width: 40px;
+    font-size: 40px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 940px;
+    margin: auto;
+}
+
+
+.container .card-container {
+    width: 520px;
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+
+.container .card-container .show-card {
+    margin-top: 10px;
+    height: 600px;
+    width: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.container .card-container .show-card:hover {
+    box-shadow: 0 20px 36px 0 rgba(0,0,0,0.2);
+}
+
+.container .card-container .show-card:hover #show-img {
+    filter: none;
+    -webkit-filter: grayscale(0%);
+}
+
+.container .card-container .show-header {
+    height: 100px;
+    display: flex;
+}
+
+.container .card-container .show-header .show-avatar .avatar {
+    border-radius: 50%;
+    border: 3px solid;
+    width: 75px;
+    height: 75px;
+    margin: auto;
+    margin-top: 5px;
+    padding: 3px;
+}
+
+.container .card-container .show-header .show-avatar .avatar .img-container {
+    width: 75px;
+    height: 75px;
+    background-image: url("../assets/imgs/netflix_logo.png");
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.container .card-container .show-actions {
+    height: 60px;
+    display: flex;
+}
+
+
+.container .card-container .show-actions .icon-container {
+    margin-left: 10px;
+    width: 80px;
+}
+
+.container .card-container .show-actions .icon-container i {
+    font-size: 60px;
+}
+
+.container .card-container .show-actions .show-rating {
+    width: 100%;
+}
+
+.container .card-container .show-actions .show-rating h4 {
+    line-height: 3;
+}
+
+.container .card-container .show-actions .show-favorite {
+    width: 80px;
+}
+
+.container .card-container .show-actions .show-favorite i {
+    font-size: 55px;
+}
+
+.container .card-container .show-actions .show-movie {
+    width: 80px;
+}
+
+.container .card-container .show-header .show-avatar {
+    width: 150px;
+    height: 100px;
+}
+
+.container .card-container .show-header .show-name {
+    /* border: 1px solid; */
+    width: 100%;
+    height: 100px;
+}
+
+.container .card-container .show-header .show-name h3 {
+    margin-left: 5px;
+}
+
+.container .card-container .show-header .show-name h4 {
+    font-weight: 400;
+}
+
+.container .card-container .show-media {
+    height: 350px;
+}
+
+.container .card-container .show-media img {
+   width: 100%;
+   height: 100%;
+   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+   filter: grayscale(100%);
+}
+
+.container .card-container .show-content {
+    height: 145px;
+}
+
+.container .card-container .show-content .show-description {
+    height: 82px;
+    position: relative;
+}
+
+.container .card-container .show-content .show-description h5 {
+    font-weight: 400;
+}
+
+.container .card-container .show-content .show-description .read-more-btn {
+    margin-top: 5px;
+    border-top: 1px solid #ccc;
+    width: 100%;
+    height: 30px;
+}
+
+.container .card-container .show-content .show-description .read-more-btn b {
+    line-height: 2;
+    margin-left: 15px;
+}
+
+
+.container .suggested-container {
+    width: 420px;
+    margin-top: 80px;
+}
+
+.container .suggested-container .latest-show-card {
+    height: 340px;
+    width: 400px;
+    position: fixed;
+    z-index: 1;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px 0px;
+    transition: all 0.3s ease 0s;
+    background: rgb(255, 255, 255);
+}
+
+.container .suggested-container .latest-show-card .latest-header {
+    height: 50px;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+}
+.container .suggested-container .latest-show-card .latest-header h3 {
+    margin: 25px;
+}
+
+.container .suggested-container .latest-show-card .latest-header  #latest-shows {
+    color: #bfa4a4;
+    position: absolute;
+    right: 0;
+    top: -10;
+    margin: 10px;
+}
+
+.container .suggested-container .latest-show-card .latest-show-content ul {
+    padding: 0;
+    margin: 0;
+    height: 264px;
+    overflow: auto;
+}
+
+.container .suggested-container .latest-show-card .latest-show-content li {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    height: 60px;
+}
+
+.container .suggested-container .latest-show-card .latest-show-content li .show-avatar {
+    width: 80px;
+}
+
+.container .suggested-container .latest-show-card .latest-show-content li .show-avatar .avatar .img-container {
+    width: 50px;
+    height: 50px;
+    background-image: url(../assets/imgs/netflix_logo.png);
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.container .suggested-container .latest-show-card .latest-show-content li .show-name h3, h5 {
+    padding: 0;
+    margin: 5px 0px 0px 20px;
+}
+
+.container .suggested-container .latest-show-card .latest-show-content li #show-title, #show-date {
+    margin: 5px 0px 0px 5px;
+}
+
+.container .suggested-container .latest-show-card .latest-show-content li #show-date {
+    font-weight: 300;
+}
+
+
+.container .suggested-container .suggested-card {
+    width: 400px;
+    height: 290px;
+    position: fixed;
+    z-index: 1;
+    top: 425px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px 0px;
+    transition: all 0.3s ease 0s;
+    background: rgb(255, 255, 255);
+}
+
+.container .suggested-container .suggested-header h3 {
+    margin: 25px;
+    color: #bfa4a4;
+}
+
+.container .suggested-container .suggested-content ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container .suggested-container .suggested-content li {
+    display: flex;
+    height: 68px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.container .suggested-container .suggested-content li .show-avatar {
+    width: 100px;
+    height: 68px;
+}
+
+.container .suggested-container .suggested-content li .show-avatar .avatar .img-container {
+    width: 50px;
+    height: 50px;
+    background-image: url(../assets/imgs/netflix_logo.png);
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin: auto;
+    margin-top: 5px
+}
+
+.container .suggested-container .suggested-content li .show-title {
+    height: 68px;
+    width: 75%;
+}
+
+.container .suggested-container .suggested-content li .show-icon {
+    float: right;
+    width: 80px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 68px;
+}
+
+.container .suggested-container .suggested-content li .show-icon i {
+    font-size: 50px;
+    margin: 10px;
+}
+
+.container .suggested-container .suggested-content li .show-title h3, h4 {
+    margin: 5px;
+    padding: 0;
+}
+
+.container .suggested-container .suggested-content li .show-title h4 {
+    font-weight: 300;
+}
+
+footer {
+    width: 100%;
+    height: 90px;
+    background: #212121;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+footer .signature #web-title, #web-creator, #web-created {
+    margin: 0px;
+    padding: 0px;
+    color: #fff;
+    padding: 5px;
+}
+
+footer .signature #web-title {
+    background: #484848;
+}
+
+
+footer .signature #web-creator, #web-created {
+    font-weight: 300;
+}
+
+
+@media (max-device-width: 940px) {
+    .container, 
+    .container .card-container, 
+    .container .card-container .show-card {
+        width: 100% !important;
+    }
+
+    .container .suggested-container,
+    .suggested-container .latest-show-card,
+    .suggested-container .suggested-card {
+        width: 100% !important;
+    }
+
+    .card-container {
+        margin-bottom: 0px !important;
+    }
+
+    .suggested-container {
+        margin-top: 0px !important;
+    }
+
+    .latest-show-card {
+        margin-top: 10px !important;
+        position: relative !important;
+        z-index: 0 !important;
+    }
+
+    .suggested-card {
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+        position: relative !important;
+        z-index: 0 !important;
+        top: 0px !important;
+    }
+
+    footer {
+        position: relative;
+        height: 90px;
+    }
+}
+
+@media (max-device-width: 320px) {
+    .container .card-container .show-content .show-description .read-more-btn {
+        margin-top: 0px;
+    }
+}

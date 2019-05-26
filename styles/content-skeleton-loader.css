@@ -1,0 +1,53 @@
+.content-skeleton-loader:empty {
+    margin-top: 20px;
+    height: 600px;
+    width: 500px;
+    background-repeat: no-repeat;
+    
+    background-image: 
+        radial-gradient(circle 40px, lightgray 99%, transparent 0),
+        linear-gradient( 100deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 80% ),
+        linear-gradient(lightgray 30px, transparent 0),
+        linear-gradient(lightgray 30px, transparent 0),
+        linear-gradient(lightgray 100%, transparent 0),
+        linear-gradient(lightgray 18px, transparent 0),
+        linear-gradient(lightgray 18px, transparent 0),
+        linear-gradient(white 100%, transparent 0);
+
+    background-size: 
+        80px 80px, /* circle */
+        75px 100%, /* highlight */
+        200px 24px, /* title */
+        140px 20px,  /* sub-title */
+        100% 380px, /* media */
+        300px 18px, /* content */
+        230px 18px, /* content */
+        100% 100%;  /* card */
+    
+    background-position:
+        15px 24px,
+        0    0, /* highlight */
+        120px 40px,
+        120px 75px,
+        0     125px,
+        20px  520px,
+        20px  545px,
+        0     0;
+
+    animation: shine 1s infinite;
+}
+
+@keyframes shine {
+    to {
+        background-position:
+            15px 24px,
+            100%  0,
+            120px 40px,
+            120px 75px,
+            0     125px,
+            20px  520px,
+            20px  545px,
+            0     0;
+    }
+}
+

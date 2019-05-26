@@ -1,0 +1,104 @@
+.suggested-skeleton-loader {
+    margin-top: 10px;
+    height: 500px;
+    width: 400px;
+    position: fixed;
+    background-repeat: no-repeat;
+    
+    background-image: 
+        linear-gradient(lightgray 30px, transparent 0),
+        linear-gradient( 100deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 80% ),
+        linear-gradient(lightgray 30px, transparent 0),
+        linear-gradient(lightgray 3px, transparent 0),
+        
+        radial-gradient(circle 30px, lightgray 99%, transparent 0),
+        linear-gradient(lightgray 30px, transparent 0),
+        linear-gradient(lightgray 30px, transparent 0),
+        
+        radial-gradient(circle 30px, lightgray 99%, transparent 0),
+        linear-gradient(lightgray 30px, transparent 0),
+        linear-gradient(lightgray 30px, transparent 0),
+
+        radial-gradient(circle 30px, lightgray 99%, transparent 0),
+        linear-gradient(lightgray 30px, transparent 0),
+        linear-gradient(lightgray 30px, transparent 0),
+        
+        
+        linear-gradient(white 100%, transparent 0);
+    
+    background-size: 
+        320px 30px, /* title */
+        75px 100%, /* highlight */
+        200px 20px, /* sub-title */
+        100%  3px,  /* border */
+
+        60px  60px, /* circle */
+        150px  20px, /* title */
+        120px  12px, /* sub-title */
+
+        60px  60px, /* circle */
+        150px  20px, /* title */
+        120px  12px, /* sub-title */
+
+        60px  60px, /* circle */
+        150px  20px, /* title */
+        120px  12px, /* sub-title */
+
+
+        100% 100%;  /* card */
+
+    background-position:
+        15px 24px,
+        0    0, /* highlight */
+        15px 60px,
+        0    100px,
+
+        15px 120px,
+        90px 130px,
+        90px 155px,
+
+        15px 200px,
+        90px 210px,
+        90px 235px,
+
+        15px 280px,
+        90px 290px,
+        90px 315px,
+
+        0     0;
+
+    animation: shine-suggested 1s infinite;
+}
+
+@keyframes shine-suggested {
+    to {
+        background-position:
+        15px 24px,
+        100%    0, /* highlight */
+        15px 60px,
+        0    100px,
+
+        15px 120px,
+        90px 130px,
+        90px 155px,
+
+        15px 200px,
+        90px 210px,
+        90px 235px,
+
+        15px 280px,
+        90px 290px,
+        90px 315px,
+
+        0     0;
+    }
+}
+
+@media (max-width: 920px) {
+    .suggested-skeleton-loader {
+        position: relative;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+}
